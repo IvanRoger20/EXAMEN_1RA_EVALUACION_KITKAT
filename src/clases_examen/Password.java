@@ -9,17 +9,32 @@ package clases_examen;
  *
  * @author IvanTron
  */
+
 public class Password {
+    
+    public static void main(String[] args) {
+        Password1 MiContra = new Password1();
+        MiContra.setUsuario("xXx_PepeMax_xXx");
+        MiContra.setContraseña("itachi23");
+        if (MiContra.verificarAcceso(MiContra.getUsuario(), MiContra.getContraseña()) == true) {
+            System.out.println("El usuario y contraseña es valido");
+        } else {
+            System.out.println("El usuario o contraseña no es valido");
+        }
+    }
+}
+
+class Password1 {
 
     private String Usuario;
     private String Contraseña;
 
-    public Password() {
+    public Password1() {
         Usuario = "";
         Contraseña = "";
     }
 
-    public Password(String Usuario, String Contraseña) {
+    public Password1(String Usuario, String Contraseña) {
         this.Usuario = Usuario;
         this.Contraseña = Contraseña;
     }
