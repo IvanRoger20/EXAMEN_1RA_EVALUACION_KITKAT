@@ -11,13 +11,26 @@ package clases_examen;
  */
 public class CLASE_EMPLEADO {
 
+    public static void main(String[] args) {
+        Empleado empleado = new Empleado();
+        empleado.setNombre("Juan Manuel");
+        empleado.setApellido("Rosa Mendoza");
+        empleado.setDireccion("Calle Robinson #30132");
+        empleado.setSalario(45231);
+        empleado.setAñoIngreso(2010);
+        empleado.imprimirDatos();
+    }
+}
+
+class Empleado {
+
     private String nombre;
     private String apellido;
     private String direccion;
     private int añoIngreso;
     private double salario;
 
-    public CLASE_EMPLEADO() {
+    public Empleado() {
         nombre = "";
         apellido = "";
         direccion = "";
@@ -25,7 +38,7 @@ public class CLASE_EMPLEADO {
         salario = 0;
     }
 
-    public CLASE_EMPLEADO(String nombre, String apellido, String direccion, int añoIngreso, double salario) {
+    public Empleado(String nombre, String apellido, String direccion, int añoIngreso, double salario) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
