@@ -14,7 +14,7 @@ public class DatosIntegrantes {
         System.out.println("      Nombre                N.Control");
         System.out.println("Ricardo Ivan Banda Ayala    21550389");
         System.out.println("Ramírez Lechuga Jaime Ramón 21550308");
-        System.out.println("Ivan Rogelio Garcia Ortiz   21550379");
+        System.out.println("Garcia Ortiz Ivan Rogelio   21550379");
     }
     
     public static void imprimirProblemasResueltos() {
